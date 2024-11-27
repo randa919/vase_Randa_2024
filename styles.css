@@ -1,0 +1,107 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+}
+
+.hero {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.hero-image {
+  height: 400px;
+  background-color: #d9d9d9; /* Fallback */
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+.intro,
+.items {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+  text-align: middle;
+}
+
+.artifact {
+  display: flex;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px;
+  align-items: center; /* Centers vertically */
+}
+
+.artifact .slideshow {
+  width: 50%; /* Take up half the space for the images */
+  margin-right: 20px; /* Space between the image and text */
+  position: relative; /* Make the buttons position absolute within the container */
+}
+
+.artifact .slideshow img {
+  width: 100%;
+  height: auto;
+  display: none; /* Hide all images by default */
+}
+
+.artifact .slideshow img.active {
+  display: block; /* Show only the active image */
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+button.prev {
+  left: 10px;
+}
+
+button.next {
+  right: 10px;
+}
+
+/* Artifact Descriptions */
+.description {
+  width: 50%; /* Take up the other half for the text */
+  padding: 10px 20px;
+  background-color: #d7e7f8; /* Light blue tint */
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* 3D Model Viewer */
+.model-viewer-container {
+  margin-top: 20px;
+}
+
+.model-viewer-container h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #222;
+  color: white;
+}
